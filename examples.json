@@ -1,0 +1,60 @@
+[
+  {
+    "label": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+    "input": {
+      "glicemia": 90,
+      "insulina": 10
+    },
+    "expected": {
+      "raw": {
+        "ir": 2.222,
+        "beta": 133.33
+      },
+      "main": "2,22",
+      "level": "low"
+    },
+    "originalInput": {
+      "glicemia": 90,
+      "insulina": 10
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+    "input": {
+      "glicemia": 81,
+      "insulina": 13.5
+    },
+    "expected": {
+      "raw": {
+        "ir": 2.7,
+        "beta": 270
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "glicemia": 81,
+      "insulina": 13.5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+    "input": {
+      "glicemia": 100,
+      "insulina": 15
+    },
+    "expected": {
+      "raw": {
+        "ir": 3.704,
+        "beta": 145.95
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "glicemia": 100,
+      "insulina": 15
+    },
+    "expandedZeroOptions": []
+  }
+]

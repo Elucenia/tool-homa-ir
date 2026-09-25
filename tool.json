@@ -1,0 +1,150 @@
+{
+  "tool": {
+    "id": "homa-ir",
+    "title": "HOMA-IR e HOMA-β",
+    "short": "Resistência à insulina e função da célula beta",
+    "desc": "Calcule o HOMA-IR (resistência à insulina) e o HOMA-β (função da célula beta) a partir da glicemia e da insulina de jejum, com o ponto de corte brasileiro.",
+    "lead": "Estima a resistência à insulina e a função secretora da célula β a partir de uma única dosagem de glicemia e insulina em jejum, em adultos sem uso de insulina.",
+    "spec": [
+      "endocrinologia-e-metabologia",
+      "nutrologia",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "glicemia",
+        "Glicemia de jejum",
+        "num",
+        {
+          "min": 40,
+          "max": 400,
+          "step": 1,
+          "unit": "mg/dL",
+          "ph": "90"
+        }
+      ],
+      [
+        "insulina",
+        "Insulina de jejum",
+        "num",
+        {
+          "min": 0.5,
+          "max": 300,
+          "step": 0.1,
+          "unit": "µU/mL",
+          "ph": "10"
+        }
+      ]
+    ],
+    "formula": "<p><strong>HOMA-IR</strong> = insulina (µU/mL) × glicemia (mmol/L) ÷ 22,5.</p><p><strong>HOMA-β</strong> = 20 × insulina (µU/mL) ÷ [glicemia (mmol/L) − 3,5] (%).</p><p>Glicemia em mmol/L = mg/dL ÷ 18.</p>",
+    "table": [
+      [
+        "HOMA-IR",
+        "Interpretação (BRAMS)"
+      ],
+      [
+        "≤ 2,7",
+        "Sem resistência à insulina"
+      ],
+      [
+        "&gt; 2,7",
+        "Resistência à insulina provável"
+      ]
+    ],
+    "table_note": "Ponto de corte do Brazilian Metabolic Syndrome Study (Geloneze 2009), em adultos brasileiros. Outros estudos usam o percentil 75 ou 90 da população local.",
+    "tips": [
+      "Colha glicemia e insulina na mesma amostra, após jejum de 8 a 12 horas; o ensaio de insulina varia entre laboratórios, o que muda o ponto de corte.",
+      "Não use em quem usa insulina ou tem hiperglicemia importante: o modelo pressupõe secreção endógena e glicemia próxima do normal.",
+      "O HOMA-IR não é critério diagnóstico de diabetes nem de síndrome metabólica; não há indicação de dosar insulina de rotina para rastreamento.",
+      "O HOMA-β só tem sentido junto com o HOMA-IR: um HOMA-β \"alto\" pode ser apenas compensação da resistência à insulina."
+    ],
+    "sources": [
+      [
+        "Matthews DR et al. Homeostasis model assessment: insulin resistance and β-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia, 1985.",
+        "https://doi.org/10.1007/BF00280883"
+      ],
+      [
+        "Geloneze B et al. HOMA1-IR and HOMA2-IR indexes in identifying insulin resistance and metabolic syndrome: Brazilian Metabolic Syndrome Study (BRAMS). Arq Bras Endocrinol Metabol, 2009.",
+        "https://doi.org/10.1590/S0004-27302009000200020"
+      ]
+    ],
+    "cases": [
+      [
+        "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        {
+          "glicemia": 90,
+          "insulina": 10
+        },
+        {
+          "raw": {
+            "ir": 2.222,
+            "beta": 133.33
+          },
+          "main": "2,22",
+          "level": "low"
+        }
+      ],
+      [
+        "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        {
+          "glicemia": 81,
+          "insulina": 13.5
+        },
+        {
+          "raw": {
+            "ir": 2.7,
+            "beta": 270
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        {
+          "glicemia": 100,
+          "insulina": 15
+        },
+        {
+          "raw": {
+            "ir": 3.704,
+            "beta": 145.95
+          },
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
