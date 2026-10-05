@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field glicemia",
+    "input": {
+      "insulina": 10
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field glicemia",
+    "input": {
+      "glicemia": "",
+      "insulina": 10
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" glicemia",
+    "input": {
+      "glicemia": "NaN",
+      "insulina": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" glicemia",
+    "input": {
+      "glicemia": "Infinity",
+      "insulina": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" glicemia",
+    "input": {
+      "glicemia": "1e309",
+      "insulina": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" glicemia",
+    "input": {
+      "glicemia": "invalid",
+      "insulina": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} glicemia",
+    "input": {
+      "glicemia": {},
+      "insulina": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true glicemia",
+    "input": {
+      "glicemia": true,
+      "insulina": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum glicemia",
+    "input": {
+      "glicemia": 36,
+      "insulina": 10
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum glicemia",
+    "input": {
+      "glicemia": 440,
+      "insulina": 10
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "glicemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field insulina",
+    "input": {
+      "glicemia": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": -0.5
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum insulina",
+    "input": {
+      "glicemia": 90,
+      "insulina": 330
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

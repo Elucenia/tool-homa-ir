@@ -5,12 +5,12 @@
     "short": "Resistência à insulina e função da célula beta",
     "desc": "Calcule o HOMA-IR (resistência à insulina) e o HOMA-β (função da célula beta) a partir da glicemia e da insulina de jejum, com o ponto de corte brasileiro.",
     "lead": "Estima a resistência à insulina e a função secretora da célula β a partir de uma única dosagem de glicemia e insulina em jejum, em adultos sem uso de insulina.",
+    "kind": "Calculadora",
     "spec": [
       "endocrinologia-e-metabologia",
       "nutrologia",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "glicemia",
@@ -38,27 +38,6 @@
       ]
     ],
     "formula": "<p><strong>HOMA-IR</strong> = insulina (µU/mL) × glicemia (mmol/L) ÷ 22,5.</p><p><strong>HOMA-β</strong> = 20 × insulina (µU/mL) ÷ [glicemia (mmol/L) − 3,5] (%).</p><p>Glicemia em mmol/L = mg/dL ÷ 18.</p>",
-    "table": [
-      [
-        "HOMA-IR",
-        "Interpretação (BRAMS)"
-      ],
-      [
-        "≤ 2,7",
-        "Sem resistência à insulina"
-      ],
-      [
-        "&gt; 2,7",
-        "Resistência à insulina provável"
-      ]
-    ],
-    "table_note": "Ponto de corte do Brazilian Metabolic Syndrome Study (Geloneze 2009), em adultos brasileiros. Outros estudos usam o percentil 75 ou 90 da população local.",
-    "tips": [
-      "Colha glicemia e insulina na mesma amostra, após jejum de 8 a 12 horas; o ensaio de insulina varia entre laboratórios, o que muda o ponto de corte.",
-      "Não use em quem usa insulina ou tem hiperglicemia importante: o modelo pressupõe secreção endógena e glicemia próxima do normal.",
-      "O HOMA-IR não é critério diagnóstico de diabetes nem de síndrome metabólica; não há indicação de dosar insulina de rotina para rastreamento.",
-      "O HOMA-β só tem sentido junto com o HOMA-IR: um HOMA-β \"alto\" pode ser apenas compensação da resistência à insulina."
-    ],
     "sources": [
       [
         "Matthews DR et al. Homeostasis model assessment: insulin resistance and β-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia, 1985.",
@@ -114,9 +93,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -125,17 +101,142 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T17:15:29.797Z",
+      "total": 2,
+      "passed": 2,
+      "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+      "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "HOMA 1/Matthews 1985:IRglicose×insulina/22,5; beta 20 insulina/(glicose−3,5); sem HOMA 2",
+    "implementationVersion": "homa-ir@native-2026-10-03+dc94d2a39dae",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3899825/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "HOMA-IR = insulina (µU/mL) × glicemia (mmol/L) ÷ 22,5. HOMA-β = 20 × insulina (µU/mL) ÷ [glicemia (mmol/L) − 3,5] (%). Glicemia em mmol/L = mg/dL ÷ 18.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "glicemia",
+            "label": "Glicemia de jejum",
+            "type": "num",
+            "min": 40,
+            "max": 400,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "insulina",
+            "label": "Insulina de jejum",
+            "type": "num",
+            "min": 0.5,
+            "max": 300,
+            "unit": "µU/mL",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "0f6850de994fa5f41b9ae95ea5fe00ef772989f4d06672d6b8482518f1bd7c9a"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Matthews DR et al. Homeostasis model assessment: insulin resistance and β-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia, 1985.",
+          "url": "https://doi.org/10.1007/BF00280883",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Homeostasis model assessment: insulin resistance and beta-cell function from fasting plasma glucose and insulin concentrations in man.",
+            "year": "1985",
+            "firstPublicationDate": "1985-07-01",
+            "doi": "10.1007/bf00280883",
+            "pmid": "3899825",
+            "journal": "Diabetologia",
+            "authors": "Matthews DR, Hosker JP, Rudenski AS, Naylor BA, Treacher DF, Turner RC."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3899825/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "20af27366038c5d94585580dc119f4b65542e06c9c5c0b346579b218c259ca4d",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Geloneze B et al. HOMA1-IR and HOMA2-IR indexes in identifying insulin resistance and metabolic syndrome: Brazilian Metabolic Syndrome Study (BRAMS). Arq Bras Endocrinol Metabol, 2009.",
+          "url": "https://doi.org/10.1590/S0004-27302009000200020",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "HOMA1-IR and HOMA2-IR indexes in identifying insulin resistance and metabolic syndrome: Brazilian Metabolic Syndrome Study (BRAMS).",
+            "year": "2009",
+            "firstPublicationDate": "2009-03-01",
+            "doi": "10.1590/s0004-27302009000200020",
+            "pmid": "19466221",
+            "journal": "Arquivos brasileiros de endocrinologia e metabologia",
+            "authors": "Geloneze B, Vasques AC, Stabe CF, Pareja JC, Rosado LE, Queiroz EC, Tambascia MA, BRAMS Investigators."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/19466221/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0c4f6c4e0ca2ec21d6ec5fffa0f165259c3a9872647c2cca0b728b74adc4d5f7",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T17:15:29.797Z",
+        "total": 2,
+        "passed": 2,
+        "evidencePath": "reports/review-20261003/native-additional-independent-oracles.json",
+        "scope": "Additional independent arithmetic checks for14 previously unchecked native tools. Formula indication and clinical outcomes are outside these numerical checks.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "3d60c211a418a2a9d6fa5d13dfd5b1ddd5cb87c1f7a3a8827d8ea8bdcc0349d9",
+          "meaning": "Reference to the already recorded per-tool evidence; no new test or approval is created by this synchronization."
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716"
+    },
+    "limits": "O HOMA depende de concentrações basais em jejum e da interação homeostática entre glicose e insulina. O artigo original reconhece baixa precisão das estimativas. Fórmulas simplificadas HOMA1, modelo HOMA2 e pontos de corte populacionais não são intercambiáveis; o resultado não confirma diagnóstico individual de resistência à insulina.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.013Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não confirma fórmula simplificada HOMA 1, limiares brasileiros ou exclusão explícita de insulina exógena. HOMA 2 e BRAMS são fontes distintas."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/homa-ir/calculator.js",
+    "bytes": 4931,
+    "sha256": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "baff7d8c4fb7a7fd5e5745a1519b05ac88e5d925e59dba98ca73bb05c6054164",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "087ddb0dedc2e953aa08d7bc4dbcfa49f4a08f4d99e4796b8fd7115bc6d13c1e",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

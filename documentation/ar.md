@@ -1,0 +1,71 @@
+<!-- ELUCENIA technical documentation · homa-ir · ar · no clinical/professional/rights approval -->
+
+# HOMA-IR وHOMA-β
+
+[الشروط والمصادر والأذونات](https://elucenia.org/ar/tools/homa-ir)
+
+## كيفية الاستخدام
+
+استخدم الأداة في البوابة أو افتح index.html عبر خادم HTTP محلي. اختر اللغة، وأكمل الحقول، ثم أجرِ الحساب.
+
+## المدخلات والوحدات
+
+### غلوكوز الدم الصائم
+
+`glicemia`
+
+mg/dL · النطاق: ٤٠–٤٠٠
+
+### الإنسولين الصائم
+
+`insulina`
+
+µU/mL · النطاق: ٠٫٥–٣٠٠
+
+## إصدار الطريقة
+
+HOMA 1/Matthews 1985: IR السكر×الإنسولين/22.5؛ بيتا 20 إنسولين/(السكر−3.5)؛ لا يشمل HOMA 2
+
+## المعادلة الموثقة
+
+HOMA-IR = الإنسولين (µU/mL) × السكر (mmol/L) ÷ 22.5.
+
+HOMA-β = 20 × الإنسولين (µU/mL) ÷ \[السكر (mmol/L) − 3.5\] (%).
+
+السكر بوحدة mmol/L = mg/dL ÷ 18.
+
+## الحدود والفئة السكانية
+
+يعتمد HOMA على التراكيز القاعدية أثناء الصيام وعلى التفاعل الاستتبابي بين الغلوكوز والإنسولين. تقر المقالة الأصلية بانخفاض دقة التقديرات. لا يمكن استبدال معادلات HOMA1 المبسطة أو نموذج HOMA2 أو الحدود الفاصلة السكانية بعضها ببعض؛ ولا تؤكد النتيجة تشخيصًا فرديًا لمقاومة الإنسولين.
+
+## المراجع
+
+- [Matthews DR et al. Homeostasis model assessment: insulin resistance and β-cell function from fasting plasma glucose and insulin concentrations in man. Diabetologia, 1985.](https://doi.org/10.1007/BF00280883)
+
+- [Geloneze B et al. HOMA1-IR and HOMA2-IR indexes in identifying insulin resistance and metabolic syndrome: Brazilian Metabolic Syndrome Study (BRAMS). Arq Bras Endocrinol Metabol, 2009.](https://doi.org/10.1590/S0004-27302009000200020)
+
+## إعادة إجراء الاختبارات التقنية
+
+شغّل node test.cjs في المجلد الجذري لهذا المستودع لتكرار الحالات الاصطناعية المسجلة. تُحفظ المدخلات والنتائج المتوقعة وحدود التفاوت الأصلية. لا تُعدّ الاختبارات التقنية تحققًا سريريًا.
+
+```sh
+node test.cjs
+```
+
+يحتوي tool.json على المصادر والإصدار ونطاق المراجعة. يحتفظ examples.json بالمدخلات والنتائج المتوقعة للحالات الاصطناعية؛ ويسجل results.json النتائج التي تم الحصول عليها.
+
+[السجل والمراجع](../tool.json) · [شيفرة JavaScript](../calculator.js) · [حالات مرجعية](../examples.json) · [results.json](../results.json)
+
+## المراجعة وشروط الاستخدام
+
+لم تُجرَ مراجعة سريرية مستقلة.
+
+هذه الواجهة ترجمة أعدّها مؤلفوها، وليست إصدارًا رسميًا أو معتمدًا. لم تُجرَ مراجعة سريرية مستقلة أو مراجعة لغوية مهنية، ولم تُستكمل الموافقة على حقوق استخدام الأدوات.
+
+نتيجة المعادلة أو التصنيف. يعتمد التفسير والتصرف ومدى الانطباق على التقييم المهني والمصدر المحدد.
+
+## الترخيص ونسبة العمل إلى أصحابه
+
+ينطبق Apache-2.0 على كود ELUCENIA فقط. تبقى حقوق الأدوات والمنشورات والترجمات والبيانات لأصحابها المعنيين. احتفظ بملفّي LICENSE وNOTICE.
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

@@ -1,0 +1,323 @@
+{
+  "id": "homa-ir",
+  "at": "2026-10-05T17:29:44.132Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/homa-ir/calculator.js",
+    "bytes": 4931,
+    "sha256": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716"
+  },
+  "cases": [
+    {
+      "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+      "input": {
+        "glicemia": 90,
+        "insulina": 10
+      },
+      "obtained": {
+        "id": "homa-ir",
+        "main": [
+          "2,22",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "raw": {
+          "ir": 2.2222222222222223,
+          "beta": 133.33333333333334
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "2,22",
+          "obtained": "2,22",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.ir",
+          "expected": 2.222,
+          "obtained": 2.2222222222222223,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.00022222222222234578,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.beta",
+          "expected": 133.33,
+          "obtained": 133.33333333333334,
+          "tolerance": 0.00500001,
+          "difference": 0.0033333333333303017,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ir",
+          "expected": 2.2222222222222223,
+          "obtained": 2.2222222222222223,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.beta",
+          "expected": 133.33333333333334,
+          "obtained": 133.33333333333334,
+          "tolerance": 1.3333333333333334e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2,22",
+          "obtained": "2,22",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+      "input": {
+        "glicemia": 81,
+        "insulina": 13.5
+      },
+      "obtained": {
+        "id": "homa-ir",
+        "main": [
+          "2,70",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "raw": {
+          "ir": 2.7,
+          "beta": 270
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ir",
+          "expected": 2.7,
+          "obtained": 2.7,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.beta",
+          "expected": 270,
+          "obtained": 270,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ir",
+          "expected": 2.7,
+          "obtained": 2.7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.beta",
+          "expected": 270,
+          "obtained": 270,
+          "tolerance": 2.7e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2,70",
+          "obtained": "2,70",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+      "input": {
+        "glicemia": 100,
+        "insulina": 15
+      },
+      "obtained": {
+        "id": "homa-ir",
+        "main": [
+          "3,70",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "raw": {
+          "ir": 3.7037037037037033,
+          "beta": 145.94594594594597
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ir",
+          "expected": 3.704,
+          "obtained": 3.7037037037037033,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.0002962962962969051,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.beta",
+          "expected": 145.95,
+          "obtained": 145.94594594594597,
+          "tolerance": 0.00500001,
+          "difference": 0.0040540540540234815,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ir",
+          "expected": 3.7037037037037033,
+          "obtained": 3.7037037037037033,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.beta",
+          "expected": 145.94594594594597,
+          "obtained": 145.94594594594597,
+          "tolerance": 1.4594594594594597e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "3,70",
+          "obtained": "3,70",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "",
+          "obtained": "",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 24,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

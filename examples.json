@@ -1,6 +1,13 @@
 [
   {
-    "label": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+    "id": "homa-ir",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+    "originalInput": {
+      "glicemia": 90,
+      "insulina": 10
+    },
     "input": {
       "glicemia": 90,
       "insulina": 10
@@ -13,14 +20,35 @@
       "main": "2,22",
       "level": "low"
     },
-    "originalInput": {
-      "glicemia": 90,
-      "insulina": 10
+    "recordedResult": {
+      "main": [
+        "2,22",
+        ""
+      ],
+      "label": "HOMA-IR",
+      "raw": {
+        "ir": 2.2222222222222223,
+        "beta": 133.33333333333334
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+    "id": "homa-ir",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+    "originalInput": {
+      "glicemia": 81,
+      "insulina": 13.5
+    },
     "input": {
       "glicemia": 81,
       "insulina": 13.5
@@ -32,14 +60,35 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "glicemia": 81,
-      "insulina": 13.5
+    "recordedResult": {
+      "main": [
+        "2,70",
+        ""
+      ],
+      "label": "HOMA-IR",
+      "raw": {
+        "ir": 2.7,
+        "beta": 270
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+    "id": "homa-ir",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+    "originalInput": {
+      "glicemia": 100,
+      "insulina": 15
+    },
     "input": {
       "glicemia": 100,
       "insulina": 15
@@ -51,10 +100,24 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "glicemia": 100,
-      "insulina": 15
+    "recordedResult": {
+      "main": [
+        "3,70",
+        ""
+      ],
+      "label": "HOMA-IR",
+      "raw": {
+        "ir": 3.7037037037037033,
+        "beta": 145.94594594594597
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
