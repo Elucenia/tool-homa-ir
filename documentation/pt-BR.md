@@ -69,3 +69,37 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Até 2,7: sem resistência à insulina pelo ponto de corte do BRAMS
+
+| Detalhes do resultado | |
+| --- | --- |
+| HOMA-β (função da célula β) | 133,3% |
+| Glicemia | 5,00 mmol/L |
+
+
+### 2
+
+Até 2,7: sem resistência à insulina pelo ponto de corte do BRAMS
+
+| Detalhes do resultado | |
+| --- | --- |
+| HOMA-β (função da célula β) | 270,0% |
+| Glicemia | 4,50 mmol/L |
+
+
+### 3
+
+Acima de 2,7: sugere resistência à insulina (ponto de corte do BRAMS)
+
+| Detalhes do resultado | |
+| --- | --- |
+| HOMA-β (função da célula β) | 145,9% |
+| Glicemia | 5,56 mmol/L |
+

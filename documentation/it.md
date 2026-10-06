@@ -69,3 +69,37 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Fino a 2,7: nessuna resistenza all’insulina secondo il cut-off del BRAMS
+
+| Dettagli del risultato | |
+| --- | --- |
+| HOMA-β (funzione della cellula beta) | 133,3% |
+| Glicemia | 5,00 mmol/L |
+
+
+### 2
+
+Fino a 2,7: nessuna resistenza all’insulina secondo il cut-off del BRAMS
+
+| Dettagli del risultato | |
+| --- | --- |
+| HOMA-β (funzione della cellula beta) | 270,0% |
+| Glicemia | 4,50 mmol/L |
+
+
+### 3
+
+Sopra 2,7: suggerisce resistenza all’insulina (cut-off del BRAMS)
+
+| Dettagli del risultato | |
+| --- | --- |
+| HOMA-β (funzione della cellula beta) | 145,9% |
+| Glicemia | 5,56 mmol/L |
+

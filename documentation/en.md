@@ -69,3 +69,37 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Up to 2,7: no insulin resistance by the BRAMS cutoff
+
+| Result details | |
+| --- | --- |
+| HOMA-β (beta-cell function) | 133.3% |
+| Blood glucose | 5.00 mmol/L |
+
+
+### 2
+
+Up to 2,7: no insulin resistance by the BRAMS cutoff
+
+| Result details | |
+| --- | --- |
+| HOMA-β (beta-cell function) | 270.0% |
+| Blood glucose | 4.50 mmol/L |
+
+
+### 3
+
+Above 2,7: suggests insulin resistance (BRAMS cutoff)
+
+| Result details | |
+| --- | --- |
+| HOMA-β (beta-cell function) | 145.9% |
+| Blood glucose | 5.56 mmol/L |
+

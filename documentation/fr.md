@@ -69,3 +69,37 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Jusqu’à 2,7 : pas de résistance à l’insuline selon le seuil BRAMS
+
+| Détails du résultat | |
+| --- | --- |
+| HOMA-β (fonction des cellules bêta) | 133,3% |
+| Glycémie | 5,00 mmol/L |
+
+
+### 2
+
+Jusqu’à 2,7 : pas de résistance à l’insuline selon le seuil BRAMS
+
+| Détails du résultat | |
+| --- | --- |
+| HOMA-β (fonction des cellules bêta) | 270,0% |
+| Glycémie | 4,50 mmol/L |
+
+
+### 3
+
+Au-dessus de 2,7 : suggère une résistance à l’insuline (seuil BRAMS)
+
+| Détails du résultat | |
+| --- | --- |
+| HOMA-β (fonction des cellules bêta) | 145,9% |
+| Glycémie | 5,56 mmol/L |
+

@@ -110,7 +110,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "HOMA 1/Matthews 1985:IRglicose×insulina/22,5; beta 20 insulina/(glicose−3,5); sem HOMA 2",
-    "implementationVersion": "homa-ir@native-2026-10-03+dc94d2a39dae",
+    "implementationVersion": "homa-ir@native-2026-10-05+505778f84a6d",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3899825/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -206,7 +206,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716"
+      "implementationHash": "505778f84a6d0abb32724b25fe567b89b193724cda34d569165b3a408b1dc99e",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "homa-ir@native-2026-10-03+dc94d2a39dae",
+          "previousImplementationHash": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716",
+          "implementationHash": "505778f84a6d0abb32724b25fe567b89b193724cda34d569165b3a408b1dc99e",
+          "scientificBodySha256": "739eccba97166cfa07ad9cb6082f3849dd03d8f1d1001c4fc0b3e5a224fee142",
+          "metadataContractHash": "0f6850de994fa5f41b9ae95ea5fe00ef772989f4d06672d6b8482518f1bd7c9a",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O HOMA depende de concentrações basais em jejum e da interação homeostática entre glicose e insulina. O artigo original reconhece baixa precisão das estimativas. Fórmulas simplificadas HOMA1, modelo HOMA2 e pontos de corte populacionais não são intercambiáveis; o resultado não confirma diagnóstico individual de resistência à insulina.",
     "sourceLimitEvidence": {
@@ -225,15 +253,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/homa-ir/calculator.js",
-    "bytes": 4931,
-    "sha256": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716"
+    "bytes": 5136,
+    "sha256": "505778f84a6d0abb32724b25fe567b89b193724cda34d569165b3a408b1dc99e"
   },
-  "sourceToolSha256": "baff7d8c4fb7a7fd5e5745a1519b05ac88e5d925e59dba98ca73bb05c6054164",
+  "sourceToolSha256": "d971e004a373528ce32586322c6a131d482e582c9ff6366e9f1f70ffd224e510",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "087ddb0dedc2e953aa08d7bc4dbcfa49f4a08f4d99e4796b8fd7115bc6d13c1e",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

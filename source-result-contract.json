@@ -1,0 +1,212 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "homa-ir",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "6535bdc51333f6018af1ce2e5adfc691698a2d6d",
+    "oldEngineSha256": "dc94d2a39dae1eca6267a2a48410793995e4376edf70df17439319909a989716",
+    "currentEngineSha256": "505778f84a6d0abb32724b25fe567b89b193724cda34d569165b3a408b1dc99e"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+      "input": {
+        "glicemia": 90,
+        "insulina": 10
+      },
+      "publicOutput": {
+        "id": "homa-ir",
+        "main": [
+          "2,22",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "raw": {
+          "ir": 2.2222222222222223,
+          "beta": 133.33333333333334
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ir": 2.222,
+          "beta": 133.33
+        },
+        "main": "2,22",
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2,22",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "level": "low",
+        "verdict": "Até 2,7: sem resistência à insulina pelo ponto de corte do BRAMS",
+        "rows": [
+          [
+            "HOMA-β (função da célula β)",
+            "133,3%"
+          ],
+          [
+            "Glicemia",
+            "5,00 mmol/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "ir": 2.2222222222222223,
+          "beta": 133.33333333333334
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+      "input": {
+        "glicemia": 81,
+        "insulina": 13.5
+      },
+      "publicOutput": {
+        "id": "homa-ir",
+        "main": [
+          "2,70",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "raw": {
+          "ir": 2.7,
+          "beta": 270
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ir": 2.7,
+          "beta": 270
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2,70",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "level": "low",
+        "verdict": "Até 2,7: sem resistência à insulina pelo ponto de corte do BRAMS",
+        "rows": [
+          [
+            "HOMA-β (função da célula β)",
+            "270,0%"
+          ],
+          [
+            "Glicemia",
+            "4,50 mmol/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "ir": 2.7,
+          "beta": 270
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+      "input": {
+        "glicemia": 100,
+        "insulina": 15
+      },
+      "publicOutput": {
+        "id": "homa-ir",
+        "main": [
+          "3,70",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "raw": {
+          "ir": 3.7037037037037033,
+          "beta": 145.94594594594597
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ir": 3.704,
+          "beta": 145.95
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3,70",
+          ""
+        ],
+        "label": "HOMA-IR",
+        "level": "mid",
+        "verdict": "Acima de 2,7: sugere resistência à insulina (ponto de corte do BRAMS)",
+        "rows": [
+          [
+            "HOMA-β (função da célula β)",
+            "145,9%"
+          ],
+          [
+            "Glicemia",
+            "5,56 mmol/L"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "ir": 3.7037037037037033,
+          "beta": 145.94594594594597
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

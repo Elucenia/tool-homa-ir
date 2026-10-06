@@ -1,0 +1,1359 @@
+{
+  "id": "homa-ir",
+  "implementationVersion": "homa-ir@native-2026-10-05+505778f84a6d",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (função da célula β)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "133,3%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,00 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Até 2,7: sem resistência à insulina pelo ponto de corte do BRAMS",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (função da célula β)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "270,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,50 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Até 2,7: sem resistência à insulina pelo ponto de corte do BRAMS",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (função da célula β)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "145,9%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,56 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acima de 2,7: sugere resistência à insulina (ponto de corte do BRAMS)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (beta-cell function)",
+                "locale": "en",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133.3%",
+                "locale": "en",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Blood glucose",
+                "locale": "en",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.00 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Up to 2,7: no insulin resistance by the BRAMS cutoff",
+            "locale": "en",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (beta-cell function)",
+                "locale": "en",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270.0%",
+                "locale": "en",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Blood glucose",
+                "locale": "en",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4.50 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Up to 2,7: no insulin resistance by the BRAMS cutoff",
+            "locale": "en",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (beta-cell function)",
+                "locale": "en",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145.9%",
+                "locale": "en",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Blood glucose",
+                "locale": "en",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.56 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Above 2,7: suggests insulin resistance (BRAMS cutoff)",
+            "locale": "en",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (función de la célula beta)",
+                "locale": "es",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133,3%",
+                "locale": "es",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glucemia",
+                "locale": "es",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,00 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hasta 2,7: sin resistencia a la insulina según el punto de corte del BRAMS",
+            "locale": "es",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (función de la célula beta)",
+                "locale": "es",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270,0%",
+                "locale": "es",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glucemia",
+                "locale": "es",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4,50 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hasta 2,7: sin resistencia a la insulina según el punto de corte del BRAMS",
+            "locale": "es",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (función de la célula beta)",
+                "locale": "es",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145,9%",
+                "locale": "es",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glucemia",
+                "locale": "es",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,56 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por encima de 2,7: sugiere resistencia a la insulina (punto de corte del BRAMS)",
+            "locale": "es",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (fonction des cellules bêta)",
+                "locale": "fr",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133,3%",
+                "locale": "fr",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glycémie",
+                "locale": "fr",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,00 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Jusqu’à 2,7 : pas de résistance à l’insuline selon le seuil BRAMS",
+            "locale": "fr",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (fonction des cellules bêta)",
+                "locale": "fr",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270,0%",
+                "locale": "fr",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glycémie",
+                "locale": "fr",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4,50 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Jusqu’à 2,7 : pas de résistance à l’insuline selon le seuil BRAMS",
+            "locale": "fr",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (fonction des cellules bêta)",
+                "locale": "fr",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145,9%",
+                "locale": "fr",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glycémie",
+                "locale": "fr",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,56 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Au-dessus de 2,7 : suggère une résistance à l’insuline (seuil BRAMS)",
+            "locale": "fr",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (Beta-Zell-Funktion)",
+                "locale": "de",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133,3%",
+                "locale": "de",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,00 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bis 2,7: keine Insulinresistenz nach dem BRAMS-Grenzwert",
+            "locale": "de",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (Beta-Zell-Funktion)",
+                "locale": "de",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270,0%",
+                "locale": "de",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4,50 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bis 2,7: keine Insulinresistenz nach dem BRAMS-Grenzwert",
+            "locale": "de",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (Beta-Zell-Funktion)",
+                "locale": "de",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145,9%",
+                "locale": "de",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,56 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Über 2,7: deutet auf Insulinresistenz hin (BRAMS-Grenzwert)",
+            "locale": "de",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (funzione della cellula beta)",
+                "locale": "it",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133,3%",
+                "locale": "it",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia",
+                "locale": "it",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,00 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fino a 2,7: nessuna resistenza all’insulina secondo il cut-off del BRAMS",
+            "locale": "it",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (funzione della cellula beta)",
+                "locale": "it",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270,0%",
+                "locale": "it",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia",
+                "locale": "it",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4,50 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Fino a 2,7: nessuna resistenza all’insulina secondo il cut-off del BRAMS",
+            "locale": "it",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (funzione della cellula beta)",
+                "locale": "it",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145,9%",
+                "locale": "it",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia",
+                "locale": "it",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5,56 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sopra 2,7: suggerisce resistenza all’insulina (cut-off del BRAMS)",
+            "locale": "it",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (وظيفة الخلية بيتا)",
+                "locale": "ar",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "١٣٣٫٣%",
+                "locale": "ar",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "غلوكوز الدم",
+                "locale": "ar",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "٥٫٠٠ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حتى 2,7: لا توجد مقاومة للأنسولين وفقًا لعتبة BRAMS",
+            "locale": "ar",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (وظيفة الخلية بيتا)",
+                "locale": "ar",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "٢٧٠٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "غلوكوز الدم",
+                "locale": "ar",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "٤٫٥٠ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حتى 2,7: لا توجد مقاومة للأنسولين وفقًا لعتبة BRAMS",
+            "locale": "ar",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (وظيفة الخلية بيتا)",
+                "locale": "ar",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "١٤٥٫٩%",
+                "locale": "ar",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "غلوكوز الدم",
+                "locale": "ar",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "٥٫٥٦ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "أعلى من 2,7: يشير إلى مقاومة للأنسولين (عتبة BRAMS)",
+            "locale": "ar",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β（β 细胞功能）",
+                "locale": "zh",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133.3%",
+                "locale": "zh",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "血糖",
+                "locale": "zh",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.00 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "至 2,7：按 BRAMS 截点无胰岛素抵抗",
+            "locale": "zh",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β（β 细胞功能）",
+                "locale": "zh",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270.0%",
+                "locale": "zh",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "血糖",
+                "locale": "zh",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4.50 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "至 2,7：按 BRAMS 截点无胰岛素抵抗",
+            "locale": "zh",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β（β 细胞功能）",
+                "locale": "zh",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145.9%",
+                "locale": "zh",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "血糖",
+                "locale": "zh",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.56 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高于 2,7：提示胰岛素抵抗（BRAMS 截点）",
+            "locale": "zh",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β（β細胞機能）",
+                "locale": "ja",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133.3%",
+                "locale": "ja",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "血糖",
+                "locale": "ja",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.00 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2,7 まで: BRAMS のカットオフではインスリン抵抗性なし",
+            "locale": "ja",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β（β細胞機能）",
+                "locale": "ja",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270.0%",
+                "locale": "ja",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "血糖",
+                "locale": "ja",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4.50 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2,7 まで: BRAMS のカットオフではインスリン抵抗性なし",
+            "locale": "ja",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β（β細胞機能）",
+                "locale": "ja",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145.9%",
+                "locale": "ja",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "血糖",
+                "locale": "ja",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.56 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2,7 を超える: インスリン抵抗性を示唆する（BRAMS のカットオフ）",
+            "locale": "ja",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Glicemia 90, insulina 10: HOMA-IR 2,22; HOMA-β 133,3%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (बीटा-कोशिका कार्य)",
+                "locale": "hi",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "133.3%",
+                "locale": "hi",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  133.3
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.00 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2,7 तक: BRAMS कटऑफ के अनुसार इंसुलिन प्रतिरोध नहीं",
+            "locale": "hi",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 81, insulina 13,5: HOMA-IR 2,70 (no corte); HOMA-β 270%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (बीटा-कोशिका कार्य)",
+                "locale": "hi",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "270.0%",
+                "locale": "hi",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  270
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "4.50 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2,7 तक: BRAMS कटऑफ के अनुसार इंसुलिन प्रतिरोध नहीं",
+            "locale": "hi",
+            "template": "documented-authored-084a678769defec92e1f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia 100, insulina 15: HOMA-IR 3,70; HOMA-β 145,9%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "HOMA-β (बीटा-कोशिका कार्य)",
+                "locale": "hi",
+                "template": "documented-authored-ee05f8ca56c4a251a1dd"
+              },
+              "value": {
+                "text": "145.9%",
+                "locale": "hi",
+                "template": "documented-authored-98b1fea4934e12a99ce2",
+                "sourceNumbers": [
+                  145.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-197eae5d98d384ec91a7"
+              },
+              "value": {
+                "text": "5.56 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-fca060fde015ccc38b8a",
+                "sourceNumbers": [
+                  5.56
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "2,7 से ऊपर: इंसुलिन प्रतिरोध का सुझाव देता है (BRAMS कटऑफ)",
+            "locale": "hi",
+            "template": "documented-authored-768e83b404e648402208"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}
